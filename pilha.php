@@ -4,7 +4,21 @@ function funcao1()
 {
     echo 'Entrei na função 1' . PHP_EOL;
 
-    $divisao = intdiv(5,0);
+    /*
+     * 2* Caso
+     */
+    try {
+        $arrayFixos = new SplFixedArray(2);
+        $arrayFixos[3] = 7;
+    } catch (RuntimeException $erro){
+        echo "Erro na funcao1()".PHP_EOL;
+    }
+
+
+    /*
+     * 1* Caso
+     */
+    //$divisao = intdiv(5,0);
 
     funcao2();
     echo 'Saindo da função 1' . PHP_EOL;
