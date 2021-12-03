@@ -2,6 +2,8 @@
 
 namespace Alura\Banco\Modelo\Conta;
 
+use Alura\Banco\Modelo\Conta\Exception\Conta;
+
 class ContaCorrente extends Conta
 {
     protected function percentualTarifa(): float
