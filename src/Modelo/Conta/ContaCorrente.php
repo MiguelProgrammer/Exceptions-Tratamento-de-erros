@@ -2,7 +2,7 @@
 
 namespace Alura\Banco\Modelo\Conta;
 
-use Alura\Banco\Modelo\Conta\Exception\Conta;
+use Alura\Banco\Modelo\Conta\Conta;
 
 class ContaCorrente extends Conta
 {
